@@ -1,5 +1,5 @@
 # Mastering Python’s Structural Pattern Matching
-### How to Replace Complex if/elif Chains with Cleaner, Safer Code
+#### How to Replace Complex if/elif Chains with Cleaner, Safer Code
 
 **By Tihomir Manushev**  
 *Oct 13, 2025 · 8 min read*

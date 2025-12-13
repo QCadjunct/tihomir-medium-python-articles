@@ -1,5 +1,5 @@
 # Advanced Slicing Techniques in Python: Beyond the Brackets
-### Unlock the full potential of Python’s most powerful feature
+#### Unlock the full potential of Python’s most powerful feature
 
 **By Tihomir Manushev**  
 *Oct 14, 2025 · 8 min read*
