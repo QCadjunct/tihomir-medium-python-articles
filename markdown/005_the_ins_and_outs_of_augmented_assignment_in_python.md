@@ -1,7 +1,7 @@
 # The Ins and Outs of Augmented Assignment in Python
 #### A Deep Dive into In-Place Operations, Mutability, and a Puzzling Python Paradox
 
-**By Tihomir Manushev**
+**By Tihomir Manushev**  
 *Oct 17, 2025 · 7 min read*
 
 ---

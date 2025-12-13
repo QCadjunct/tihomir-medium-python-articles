@@ -1,7 +1,7 @@
 # Sorting in Python: list.sort() vs. sorted()
 #### The Swiss Army Knife vs. the Scalpel for Sorting in Python
 
-**By Tihomir Manushev**
+**By Tihomir Manushev**  
 *Oct 18, 2025 · 8 min read*
 
 ---
