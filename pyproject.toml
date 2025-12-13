@@ -1,0 +1,6 @@
+[project]
+name = "medium-python-articles"
+version = "0.1.0"
+description = "A list of Python articles on medium.com"
+requires-python = ">=3.12"
+dependencies = []
