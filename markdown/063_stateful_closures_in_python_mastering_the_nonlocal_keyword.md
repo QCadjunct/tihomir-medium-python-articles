@@ -2,7 +2,7 @@
 #### Why functional purity is a myth in production, and how to manage state without the boilerplate of Object-Oriented Programming
 
 **By Tihomir Manushev**  
-*December 19, 2025 · 7 min read*
+*Dec 19, 2025 · 7 min read*
 
 ---
 

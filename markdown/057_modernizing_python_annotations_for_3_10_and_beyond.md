@@ -2,7 +2,7 @@
 #### Why List, Union, and Optional are things of the past, and how the new | operator and native generics make your code cleaner, safer, and more Pythonic
 
 **By Tihomir Manushev**  
-*December 12, 2025 · 6 min read*
+*Dec 12, 2025 · 6 min read*
 
 ---
 

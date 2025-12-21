@@ -2,7 +2,7 @@
 #### Understanding the mechanics of __closure__, co_freevars, and the nonlocal keyword
 
 **By Tihomir Manushev**  
-*December 14, 2025 · 8 min read*
+*Dec 14, 2025 · 8 min read*
 
 ---
 

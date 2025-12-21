@@ -2,7 +2,7 @@
 #### Understanding the mechanics, memory models, and internal algorithms of the standard library’s caching decorators
 
 **By Tihomir Manushev**  
-*December 18, 2025 · 7 min read*
+*Dec 18, 2025 · 7 min read*
 
 ---
 

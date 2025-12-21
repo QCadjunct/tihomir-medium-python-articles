@@ -2,7 +2,7 @@
 #### Mastering the mechanics of Python’s execution model to build robust, decoupled architectures
 
 **By Tihomir Manushev**  
-*December 15, 2025 · 7 min read*
+*Dec 15, 2025 · 7 min read*
 
 ---
 

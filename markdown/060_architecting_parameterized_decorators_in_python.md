@@ -2,7 +2,7 @@
 #### Moving from nested closures to clean Class-Based Architectures in Python 3.10+
 
 **By Tihomir Manushev**  
-*December 16, 2025 · 7 min read*
+*Dec 16, 2025 · 7 min read*
 
 ---
 
