@@ -129,7 +129,27 @@ The rewrite is almost cosmetic: square brackets became parentheses, and `re.find
 
 ### Measuring It: 548 MB vs 23 KB
 
-Talk is cheap; `tracemalloc` is not. Point both versions at the same 112.6 MB log (two million lines) and record the peak:
+Talk is cheap; `tracemalloc` is not — but first we need a file to point it at. There is no bundled `access.log`, so generate one: two million lines of plausible traffic, weighted toward `2xx` responses, landing at about 112.6 MB on disk.
+
+```python
+METHODS = ["GET", "POST", "PUT", "DELETE"]
+STATUSES = ["200", "200", "200", "301", "404", "500", "206"]
+
+
+def write_sample_log(path: str, rows: int = 2_000_000) -> None:
+    """Generate a synthetic access log so the benchmark is reproducible."""
+    with open(path, "w") as handle:
+        for row in range(rows):
+            method = METHODS[row % len(METHODS)]
+            status = STATUSES[row % len(STATUSES)]
+            size = (row * 37) % 90_000 + 128
+            handle.write(
+                f"2026-07-11T08:{row % 60:02d}:{row % 60:02d}Z "
+                f"10.0.{row % 256}.{row % 254} {method} /api/thing {status} {size}\n"
+            )
+```
+
+Each field is deterministic, so the file is identical on every machine and the numbers below reproduce exactly. Now point both versions at it and record the peak:
 
 ```python
 import tracemalloc
@@ -144,6 +164,7 @@ def measure(func, path: str) -> tuple[int, float]:
     return result, peak
 
 
+write_sample_log("access.log")            # ~112.6 MB, generated once
 total_eager, peak_eager = measure(bytes_served_eager, "access.log")
 total_lazy, peak_lazy = measure(bytes_served_lazy, "access.log")
 
